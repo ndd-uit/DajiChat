@@ -5,6 +5,6 @@ const router = express.Router(); // Tao ra mot Router moi
 
 router.post("/signup", signUp);
 
-router.post("/singin", signIn);
+router.post("/signin", signIn);
 
 export default router;
