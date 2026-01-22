@@ -1,0 +1,31 @@
+DAJI
+
+auth:
+- đăng kí, đăng nhập, logout
+- khi đăng kí sẽ yêu cầu:
+    + họ, tên --> tên hiển thị
+    + username + password --> để login
+    + email --> gửi email trong tương lai
+    + sdt ?
+    + ngày tháng năm sinh ?
+- đăng nhập bằng username + password
+    + mã hóa password
+    + JWT // lưu trong localStorage
+    + access + refresh token --> giữ trạng thái đăng nhập trong 1 khoảng thời gian nhất định
+- user
+    + profile: tên, upload ảnh
+    + kết bạn: gửi request, accept/decline
+    + tìm bạn bè bằng username
+    + list bạn bè + trạng thái online/offline (socketIO)
+- chat
+    + gửi tin nhắn trực tiếp (socketIO)
+    + tạo group chat (>2 người), mời thanh viên vào group
+    + gửi ảnh, video, file
+    + realtime push tin nhắn mới 
+    + preview tin cuối, thời gian tạo
+    + paginate khi load message cũ 
+    + khi có message mới -->> tăng số tin nhắn chưa đọc
+    + hiển thị seen nếu user đọc tin
+- extra
+    + thêm message reaction (thả tim, like, haha, wow, sad, angry)
+    + edit/delete message
